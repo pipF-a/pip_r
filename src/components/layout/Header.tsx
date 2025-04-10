@@ -1,5 +1,5 @@
 
-import { auth } from "../../../auth";
+import { auth } from "../../../utils/auth";
 import SignOut from "../ui/Sign-out";
 import SignIn from "../ui/Sing-in";
 import { ThemeToggle } from "../ui/ToggleTheme"
