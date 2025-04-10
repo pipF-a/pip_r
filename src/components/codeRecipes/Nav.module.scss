@@ -1,0 +1,40 @@
+.navList {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+
+
+.navItem {
+    display: inline-block;
+    list-style: outside none none;
+    overflow: hidden;
+
+    a {
+        font-size: 14px; 
+        transition: all 0.35s ease;
+        padding: 0 1em;
+        position: relative;
+        display: inline-block;
+        letter-spacing: 1px;
+        margin: 0;
+        text-decoration: none;
+        text-align: center;
+
+        &::after {
+          color: #ff9bf8;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 100%;
+          content: attr(data-hover);
+          white-space: nowrap;
+        }
+
+        &:hover {
+          padding: 0 1em;
+          transform: translateY(100%);
+        }
+    }
+
+}
