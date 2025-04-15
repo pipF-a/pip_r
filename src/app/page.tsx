@@ -5,7 +5,7 @@ import { About } from "@/components/sections/About";
 import { BuildWith } from "@/components/sections/BuildWith";
 import { CodeRecipe } from "@/components/sections/CodeRecipe";
 import { auth } from "../../utils/auth";
-import { Todos } from "@/components/sections/Todos";
+import  Todos  from "@/components/sections/Todos";
 import { TodosGuest } from "@/components/sections/TodosGuest";
 
 
