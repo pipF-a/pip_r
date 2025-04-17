@@ -3,7 +3,7 @@ import Image from 'next/image'
 export const About = () => {
     return(
       <>
-        <section className='shadow-[var(--custom-shadow)] rounded-md p-4 col-span-2 bg-white'>
+        <section className='mb-4 shadow-[var(--custom-shadow)] rounded-md p-4 col-span-2 bg-white'>
           <div>
             <h2 className="text-[18px] font-[300] mb-4 text-darkGrayishBlue">About me</h2>
             <p className="bg-custom-blue">当サイトは、キャッチアップとアウトプットを目的としたサイトであるため誰かに向けたサイトではありません。</p>
