@@ -1,21 +1,27 @@
-import { supabase } from "./supabase";
+'use server';
 
-// Todo型を定義
+import { supabase } from "./supabase";
+import { revalidatePath } from "next/cache";
+
 interface Todo {
   id: number;
   title: string;
 }
 
 
-// getAllTodos関数に型を付与
 export const getAllTodos = async (): Promise<Todo[]> => {
   const { data, error } = await supabase.from("todo").select("*");
-
   if (error) {
     throw new Error(error.message);
   }
-
-  // dataがTodo型の配列であることを確実にする
   return data as Todo[];
 }
 
+export const addTodos = async (formData:FormData) => {
+  const todoTitle = formData.get('todotext') as string;
+    if (!todoTitle?.trim()){
+      return;
+    };
+  await supabase.from('todo').insert({title:todoTitle})
+  revalidatePath('/');
+}
