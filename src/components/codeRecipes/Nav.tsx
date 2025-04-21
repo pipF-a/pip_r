@@ -5,9 +5,9 @@ export const Nav = () => {
   return(
     <>
       <ul className={Styles.navList}>
-        <li className={Styles.navItem}><a href="#" data-hover="トップ">Top</a></li>
-        <li className={Styles.navItem}><a href="#" data-hover="ニュース">News</a></li>
-        <li className={Styles.navItem}><a href="#" data-hover="知る">About</a></li>
+        <li className={Styles.navItem}><a href="#" data-hover="トップ">とっぷ</a></li>
+        <li className={Styles.navItem}><a href="#" data-hover="ニュース">にゅーす</a></li>
+        <li className={Styles.navItem}><a href="#" data-hover="アバウト">あばうと</a></li>
       </ul>
     
     </>

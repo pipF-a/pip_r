@@ -49,7 +49,7 @@ const icons = [
       <>
         <section className="mb-4 shadow-[var(--custom-shadow)] rounded-md col-span-2 p-4 pb-8 h-fit bg-white">
           <div>
-            <h2 className="text-[18px] font-[300] mb-4 text-darkGrayishBlue">Build with</h2>
+            <h2 className="text-[16px] font-[300] mb-4 text-darkGrayishBlue">びるど うぃず</h2>
             <Marquee        
               gradient
               gradientColor="white"

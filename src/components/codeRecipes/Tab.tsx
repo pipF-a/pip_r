@@ -48,12 +48,12 @@ export const Tab = () => {
       </div>
       <div className={Styles.tabContent} id="typeA_content" style={{ display: checkboxes.typeA ? 'block' : 'none' }}>
         <div className={Styles.tabHead}>
-          <p className="">typeAの内容</p>
+          <p className="">たいぷえー</p>
         </div>
       </div>
       <div className={Styles.tabContent} id="typeB_content" style={{ display: checkboxes.typeB ? 'block' : 'none' }}>
         <div className={Styles.tabHead}>
-          <p className="">typeBの内容</p>
+          <p className="">たいぷびー</p>
         </div>
       </div>
     </>
