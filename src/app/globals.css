@@ -20,11 +20,15 @@
 
   --notebg02:repeating-linear-gradient(45deg, #f3f3f3 0, #fff 2px, #fff 0, #fff 50%);
   --note-bg-size02:20px 20px;
+
+  --note-bg-dark:linear-gradient(0deg, transparent calc(100% - 1px), #1d1d1d calc(100% - 1px)),
+    linear-gradient(90deg, transparent calc(100% - 1px), #1d1d1d calc(100% - 1px));
+
 }
 
 
 body {
-  height: 100svh;
+  /* height: 100svh; */
 }
 
 p {
@@ -57,14 +61,21 @@ p {
 
 /* テーマごとのスタイル */
 [data-theme='dark'] body {
-
   color: #fff;
   background: -webkit-linear-gradient(top, rgb(0, 0, 0) 50%, rgb(25, 19, 39)80%, rgb(43, 32, 72));
   background-repeat: no-repeat;
 
+  section {
+    background-color: #18181b;
+  }
+
   .rfm-overlay::before,
   .rfm-overlay::after {
     background: linear-gradient(to right, #171b25, rgba(255, 255, 255, 0));
+  }
+  .recipeWrap {
+    background-image: linear-gradient(0deg, transparent calc(100% - 1px), #1d1d1d calc(100% - 1px)),
+      linear-gradient(90deg, transparent calc(100% - 1px), #1d1d1d calc(100% - 1px));;
   }
 }
 
