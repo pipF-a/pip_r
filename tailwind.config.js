@@ -1,15 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ["selector", '[data-theme="dark"]'],
   content: [
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {
-    ".bg-pattern": {
-      backgroundImage:
-        "linear-gradient(to right, #ddd 1px, transparent 1px), linear-gradient(to bottom, #ddd 1px, transparent 1px)",
-      backgroundSize: "20px 20px",
-    },
-  },
   plugins: [],
 };
