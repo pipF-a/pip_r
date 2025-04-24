@@ -1,8 +1,8 @@
 
-import { auth } from "../../../utils/auth";
-import SignOut from "../ui/Sign-out";
-import SignIn from "../ui/Sing-in";
-import { ThemeToggle } from "../ui/ToggleTheme"
+import { auth } from "@/utils/auth";
+import SignOut from "@/components/ui/Sign-out";
+import SignIn from "@/components/ui/Sing-in";
+import { ThemeToggle } from "@/components/ui/ToggleTheme"
 
 
 interface HeaderProps {

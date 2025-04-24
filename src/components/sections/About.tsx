@@ -5,8 +5,8 @@ export const About = () => {
       <>
         <section className='mb-4 shadow-[var(--custom-shadow)] rounded-md p-4 col-span-2 bg-white'>
           <div>
-            <h2 className="text-[16px] font-[300] mb-4 text-darkGrayishBlue dark:text-red-400">あばうと</h2>
-            <p className="bg-custom-blue">ぎじゅつのきゃっちあっぷをもくてきとしたさいと</p>
+            <h2 className="text-[17px] font-[300] mb-4 text-darkGrayishBlue dark:text-red-400">about</h2>
+            <p className="bg-custom-blue">キャッチアップを目的としたサイト</p>
             <div className='flex items-center gap-x-4 mt-8'>
               <Image
                 src="/administrator.png"
@@ -17,7 +17,7 @@ export const About = () => {
               />
               <div>
                 <h3 className="text-[18px] font-[300]">pip_r</h3>
-                <p className='mt-1'>ふろんとえんどえんじにあとしてはたらいています</p>
+                <p className='mt-1'>フロントエンドエンジニア</p>
               </div>
             </div>
     
