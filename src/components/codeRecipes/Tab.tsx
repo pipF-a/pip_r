@@ -9,7 +9,7 @@ export const Tab = () => {
     typeB: false,
   });
 
-  const handleCheckboxChange = (id) => (event) => {
+  const handleCheckboxChange = (id: 'typeA' | 'typeB') => (event: React.ChangeEvent<HTMLInputElement>) => {
     setCheckboxes((prevCheckboxes) => {
       const newCheckboxes = { ...prevCheckboxes, [id]: event.target.checked };
 
