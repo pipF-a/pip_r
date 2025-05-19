@@ -1,5 +1,5 @@
 
-import { signIn } from "../../utils/auth"
+import { signIn } from "@/utils/auth"
  
 export default function SignIn() {
   return (

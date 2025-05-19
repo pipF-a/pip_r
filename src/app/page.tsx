@@ -6,6 +6,8 @@ import { CodeRecipe } from "@/components/sections/CodeRecipe";
 import { auth } from "@/utils/auth";
 import  Todos  from "@/components/sections/Todos";
 import { TodosGuest } from "@/components/sections/TodosGuest";
+import Weather from "@/components/ui/Weather";
+
 
 
 
@@ -15,11 +17,12 @@ export default async function Home() {
       <>
         <Header title={'pip_r'}/>
         <main className="pt-16 pr-4 pl-4">
-          <div className="container mx-auto lg:grid grid-cols-4 grid-rows-1 gap-7">
+          <div className="relative container mx-auto lg:grid grid-cols-4 grid-rows-1 gap-7">
             <About/>
             <BuildWith/>
             {sesstion ? <Todos/> : <TodosGuest/>}
             <CodeRecipe/>
+            <Weather/>
           </div>
         </main>
         <Footer title={'©pip_r'}/>
